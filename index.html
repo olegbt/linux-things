@@ -24,25 +24,32 @@
       padding: 1em;
     }
     .blog-entry {
+      display: flex;
+      align-items: flex-start;
       background: white;
       margin-bottom: 1.5em;
       padding: 1em;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    .blog-entry h2 {
-      margin-top: 0;
-    }
-    .blog-entry p {
-      margin-bottom: 0;
-    }
     .blog-entry img {
-      max-width: 100%;
+      width: 120px;
       height: auto;
       border-radius: 6px;
+      margin-right: 1em;
+      flex-shrink: 0;
+    }
+    .blog-text {
+      flex: 1;
+    }
+    .blog-text h2 {
+      margin-top: 0;
       margin-bottom: 0.5em;
     }
-    .blog-entry a {
+    .blog-text p {
+      margin: 0;
+    }
+    .blog-text a {
       text-decoration: none;
       color: #0077cc;
     }
@@ -56,18 +63,24 @@
   <div class="container">
     <div class="blog-entry">
       <img src="images/thinkpad-x40-thumb.jpg" alt="ThinkPad X40 thumbnail">
-      <h2><a href="thinkpad-x40.html">Thinkpad X40 with Antix</a></h2>
-      <p>Breathe new life into this old laptop by updating the SSD and installing a lightweight Linux distribution. This guide walks through installing Antix on the Thinkpad X40.</p>
+      <div class="blog-text">
+        <h2><a href="thinkpad-x40.html">Thinkpad X40 with Antix</a></h2>
+        <p>Breathe new life into this old laptop by updating the SSD and installing a lightweight Linux distribution. This guide walks through installing Antix on the Thinkpad X40.</p>
+      </div>
     </div>
     <div class="blog-entry">
       <img src="images/thinkpad-x61s-thumb.jpg" alt="ThinkPad X61s thumbnail">
-      <h2><a href="thinkpad-x61s.html">ThinkPad X61s: Update BIOS to Improve Performance</a></h2>
-      <p>Double the hard drive performance by updating the BIOS on this reliable and compact ThinkPad.</p>
+      <div class="blog-text">
+        <h2><a href="thinkpad-x61s.html">ThinkPad X61s: Update BIOS to Improve Performance</a></h2>
+        <p>Double the hard drive performance by updating the BIOS on this reliable and compact ThinkPad.</p>
+      </div>
     </div>
     <div class="blog-entry">
       <img src="images/samsung-305u-thumb.jpg" alt="Samsung 305U thumbnail">
-      <h2><a href="samsung-305u.html">Samsung 305U: Small Laptop with Lightweight Lubuntu</a></h2>
-      <p>Update the wireless drivers and install Lubuntu on this neat little laptop for a fast and responsive experience.</p>
+      <div class="blog-text">
+        <h2><a href="samsung-305u.html">Samsung 305U: Small Laptop with Lightweight Lubuntu</a></h2>
+        <p>Update the wireless drivers and install Lubuntu on this neat little laptop for a fast and responsive experience.</p>
+      </div>
     </div>
   </div>
 </body>
